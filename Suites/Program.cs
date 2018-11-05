@@ -34,8 +34,10 @@ namespace Suites
             }
             {
                 Console.WriteLine("Conway");
+                int nombreInitial = 1;
+                int max = 16;
                 int i = 0;
-                foreach (var nb in Conway.Suite("1").Take(16))
+                foreach (var nb in Conway.Suite(nombreInitial.ToString()).Take(max))
                 {
                     Console.WriteLine($"suite {++i} : {nb}");
                 }
