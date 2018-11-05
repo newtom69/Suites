@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Fibonacci
+namespace Suites
 {
     class Fibonacci
     {
-        public static IEnumerable<double> Suite()
+        public static IEnumerable<int> Suite()
         {
             int courant = 1;
             int suivant = 1;

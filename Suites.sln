@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{47919B78-F56A-4985-B4E9-2BE42EFCE391}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syracuse", "Syracuse\Syracuse.csproj", "{67A3ADB4-640F-4B9E-9481-CF0EDA93C622}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suites", "Suites\Suites.csproj", "{67A3ADB4-640F-4B9E-9481-CF0EDA93C622}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{47919B78-F56A-4985-B4E9-2BE42EFCE391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47919B78-F56A-4985-B4E9-2BE42EFCE391}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47919B78-F56A-4985-B4E9-2BE42EFCE391}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{47919B78-F56A-4985-B4E9-2BE42EFCE391}.Release|Any CPU.Build.0 = Release|Any CPU
 		{67A3ADB4-640F-4B9E-9481-CF0EDA93C622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{67A3ADB4-640F-4B9E-9481-CF0EDA93C622}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67A3ADB4-640F-4B9E-9481-CF0EDA93C622}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -26,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {67CB5957-24DA-43C6-9013-0ADD37316D5F}
+		SolutionGuid = {6828BC00-032B-4019-AEC1-A16959E38779}
 	EndGlobalSection
 EndGlobal
