@@ -8,10 +8,10 @@ namespace Suites
     {
         static void Main(string[] args)
         {
-            //AppelFibonacci(45);
-            //AppelSyracuse(50, 1978);
-            //AppelConway(16, 1);
-            AppelFactorielle(20);
+            AppelFibonacci(45);
+            AppelSyracuse(50, 1978);
+            AppelConway(16, 1);
+            AppelFactorielle(16);
         }
 
 
