@@ -8,9 +8,10 @@ namespace Suites
     {
         static void Main(string[] args)
         {
-            AppelFibonacci(45);
-            AppelSyracuse(50, 1978);
-            AppelConway(16, 1);
+            //AppelFibonacci(45);
+            //AppelSyracuse(50, 1978);
+            //AppelConway(16, 1);
+            AppelFactorielle(20);
         }
 
 
@@ -19,7 +20,7 @@ namespace Suites
             Console.WriteLine("Fibonacci");
             int i = 0;
             foreach (var nb in Fibonacci.Suite().Take(max))
-                Console.WriteLine($"entier {++i} : {nb}");
+                Console.WriteLine($"Fibonacci {++i} : {nb}");
 
             Console.ReadLine();
         }
@@ -29,7 +30,7 @@ namespace Suites
             Console.WriteLine("Syracuse");
             int i = 0;
             foreach (var nb in Syracuse.Suite(nombreInitial).Take(max))
-                Console.WriteLine($"entier {++i} : {nb}");
+                Console.WriteLine($"Syracuse {++i} : {nb}");
 
             Console.ReadLine();
         }
@@ -39,8 +40,18 @@ namespace Suites
             Console.WriteLine("Conway");
             int i = 0;
             foreach (var nb in Conway.Suite(nombreInitial).Take(max))
-                Console.WriteLine($"suite {++i} : {nb}");
+                Console.WriteLine($"Conway {++i} : {nb}");
             
+            Console.ReadLine();
+        }
+
+        static void AppelFactorielle(int max)
+        {
+            Console.WriteLine("Factorielle");
+            int i = 0;
+            foreach (var nb in Factorielle.Suite().Take(max))
+                Console.WriteLine($"Factorielle {++i} : {nb}");
+
             Console.ReadLine();
         }
     }

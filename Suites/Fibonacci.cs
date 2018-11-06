@@ -13,7 +13,6 @@ namespace Suites
                 suivant = courant + (courant = suivant);
                 yield return courant;
             }
-
         }
     }
 }
