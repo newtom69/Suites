@@ -5,13 +5,14 @@ namespace Suites
 {
     class Conway
     {
-        public static IEnumerable<string> Suite(string chaineDepart)
+        public static IEnumerable<string> Suite(int depart)
         {
             int indexChaineDepart1 = 0;
             int indexChaineDepart2 = 0;
             int nbChiffreCourant = 0;
             int chiffreCourant = 0;
             string chaine;
+            string chaineDepart = depart.ToString();
             string chaineCourant = chaineDepart;
 
             yield return chaineDepart;
