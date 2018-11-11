@@ -9,42 +9,42 @@ namespace Suites
     {
         static void Main(string[] args)
         {
-            Program prg = new Program();
-            prg.Fibonacci(45);
-            prg.Syracuse(50,1978);
-            prg.Conway(16, 1);
-            prg.Factorielle(12);
+            Fibonacci(45);
+            Syracuse(50,1978);
+            Conway(16, 1);
+            Factorielle(12);
         }
 
-        public void Syracuse(int max, int nbInitial)
+        public static void Syracuse(int max, int nbInitial)
         {
             Appel(MethodBase.GetCurrentMethod().Name, nbInitial, max);
         }
 
-        public void Conway(int max, int nbInitial)
+        public static void Conway(int max, int nbInitial)
         {
             Appel(MethodBase.GetCurrentMethod().Name, nbInitial, max);
         }
 
-        public void Fibonacci(int max)
+        public static void Fibonacci(int max)
         {
             Appel(MethodBase.GetCurrentMethod().Name, 0, max);
         }
 
-        public void Factorielle(int max)
+        public static void Factorielle(int max)
         {
             Appel(MethodBase.GetCurrentMethod().Name, 0, max);
         }
 
 
-        public void Appel(string methode, int nombreInitial, int max)
+        public static void Appel(string methode, int nombreInitial, int max)
         {
             Console.WriteLine(methode);
             object[] args = new object[1];
             args[0]= nombreInitial;
             Suite laSuite = new Suite();
-            IEnumerable<Object> elementsDeLaSuite = (IEnumerable<Object>)laSuite.GetType().InvokeMember(methode,
-                BindingFlags.Public | BindingFlags.Instance ,
+            IEnumerable<Object> elementsDeLaSuite = 
+                (IEnumerable<Object>)laSuite.GetType().InvokeMember(methode,
+                BindingFlags.Public | BindingFlags.Instance | BindingFlags.InvokeMethod,
                 null, laSuite, args);
 
             int i = 0;
