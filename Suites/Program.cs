@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Reflection;
-using System.Collections.Generic;
 
 namespace Suites
 {
@@ -17,41 +15,36 @@ namespace Suites
 
         public static void Syracuse(int max, int nbInitial)
         {
-            Appel(MethodBase.GetCurrentMethod().Name, nbInitial, max);
+            Suite syracuse = new Syracuse();
+            AppelSuite(syracuse, nbInitial, max);
         }
 
         public static void Conway(int max, int nbInitial)
         {
-            Appel(MethodBase.GetCurrentMethod().Name, nbInitial, max);
+            Suite conway = new Conway();
+            AppelSuite(conway, nbInitial, max);
         }
 
         public static void Fibonacci(int max)
         {
-            Appel(MethodBase.GetCurrentMethod().Name, 0, max);
+            Suite fibonacci = new Fibonacci();
+            AppelSuite(fibonacci, 0, max);
         }
 
         public static void Factorielle(int max)
         {
-            Appel(MethodBase.GetCurrentMethod().Name, 0, max);
+            Suite factorielle = new Factorielle();
+            AppelSuite(factorielle, 0, max);
         }
 
-
-        public static void Appel(string methode, int nombreInitial, int max)
+        public static void AppelSuite(Suite laSuite, int init, int max)
         {
-            Console.WriteLine(methode);
-            object[] args = new object[1];
-            args[0]= nombreInitial;
-            Suite laSuite = new Suite();
-            IEnumerable<Object> elementsDeLaSuite = 
-                (IEnumerable<Object>)laSuite.GetType().InvokeMember(methode,
-                BindingFlags.Public | BindingFlags.Instance | BindingFlags.InvokeMethod,
-                null, laSuite, args);
-
+            Console.WriteLine(laSuite.ToString().Substring(7));
             int i = 0;
-            foreach (var nb in elementsDeLaSuite.Take(max))
-                Console.WriteLine($"{methode} {++i} : {nb}");
-
+            foreach (var nb in laSuite.LaSuite(init).Take(max))
+                Console.WriteLine($"{laSuite.ToString().Substring(7)} {++i} : {nb}");
             Console.ReadLine();
+
         }
     }
 }
