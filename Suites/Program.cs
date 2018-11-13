@@ -21,8 +21,7 @@ namespace Suites
 
         public static void Conway(int max, int nbInitial)
         {
-            Suite conway = new Conway();
-            AppelSuite(conway, nbInitial, max);
+            AppelSuite(new Conway(), nbInitial, max);
         }
 
         public static void Fibonacci(int max)
