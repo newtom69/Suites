@@ -7,11 +7,17 @@ namespace Suites
     {
         static void Main(string[] args)
         {
+            Pi(25);
             Heron(9,2);
             Fibonacci(45);
             Syracuse(50,1978);
             Conway(16, 1);
             Factorielle(12);
+        }
+
+        public static void Pi(int max)
+        {
+            AppelSuite(new Pi(), 0, max);
         }
 
         public static void Heron(int max, int nbInitial)
