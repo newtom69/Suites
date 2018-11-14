@@ -13,6 +13,18 @@ namespace Suites
             Syracuse(50,1978);
             Conway(16, 1);
             Factorielle(12);
+            Bale(50);
+            PiWallis(1000000);
+        }
+
+        public static void Bale(int max)
+        {
+            AppelSuite(new Bale(), 0, max);
+        }
+
+        public static void PiWallis(int max)
+        {
+            AppelSuite(new PiWallis(), 0, max);
         }
 
         public static void Pi(int max)
