@@ -3,16 +3,17 @@ using System.Collections.Generic;
 
 namespace Suites
 {
-    class Fibonacci : Suite
+    class NombreOr : Suite
     {
         override public IEnumerable<Object> LaSuite(int inutile)
         {
-            int courant = 1;
-            int suivant = 1;
+            double courant = 2;
+            double suivant;
             while (true)
             {
-                suivant = courant + (courant = suivant);
+                suivant = 1 + 1/courant;
                 yield return courant;
+                courant = suivant;
             }
         }
     }

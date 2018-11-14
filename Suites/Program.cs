@@ -14,7 +14,13 @@ namespace Suites
             Conway(16, 1);
             Factorielle(12);
             Bale(50);
+            NombreOr(40);
             PiWallis(1000000);
+        }
+
+        public static void NombreOr(int max)
+        {
+            AppelSuite(new NombreOr(), 0, max);
         }
 
         public static void Bale(int max)

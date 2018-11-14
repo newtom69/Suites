@@ -47,6 +47,7 @@
     <Compile Include="Factorielle.cs" />
     <Compile Include="Fibonacci.cs" />
     <Compile Include="Heron.cs" />
+    <Compile Include="NombreOr.cs" />
     <Compile Include="Pi.cs" />
     <Compile Include="PiLeibniz.cs" />
     <Compile Include="PiWallis.cs" />
