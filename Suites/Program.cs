@@ -7,15 +7,21 @@ namespace Suites
     {
         static void Main(string[] args)
         {
+            Fibonacci(45);
+            OrFibonacci(40);
+            NombreOr(40);
             Pi(25);
             Heron(9,2);
-            Fibonacci(45);
             Syracuse(50,1978);
             Conway(16, 1);
             Factorielle(12);
             Bale(50);
-            NombreOr(40);
-            PiWallis(1000000);
+            PiWallis(100000);
+        }
+
+        public static void OrFibonacci(int max)
+        {
+            AppelSuite(new OrFibonacci(), 0, max);
         }
 
         public static void NombreOr(int max)
